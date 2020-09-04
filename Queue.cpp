@@ -26,8 +26,8 @@ void Queue::enqueue(const QueueElement& value)
     int newBack = (myBack + 1) % QUEUE_CAPACITY;
     if (newBack != myFront)     // queue isn't full
     {
-        myArray[myBack] = value;
-        myBack = newBack;
+        myArray[myBack] = value; // Notice change from book source code
+        myBack = newBack;  
     }
     else
     {
