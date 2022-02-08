@@ -28,6 +28,11 @@ int main()
     q1.enqueue(50);
     q1.dequeue();
     q1.dequeue();
+    q1.display(cout);
+    cout << "Queue has 1 item left.  Empty? " << boolalpha << q1.empty() << endl;
+    q1.dequeue();
+    q1.display(cout);
+    cout << "Queue has 0 item left.  Empty? " << boolalpha << q1.empty() << endl;
     q1.enqueue(90);
     q1.enqueue(60);
     q1.enqueue(10);
